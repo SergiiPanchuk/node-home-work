@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(process.cwd(), "static")));
 app.set("view engine", ".hbs");
 app.engine(".hbs", engine({ defaultLayout: false }));
+
 app.set("views", path.join(process.cwd(), "static"));
 
 app.get("/login", async (req: Request, res: Response) => {
