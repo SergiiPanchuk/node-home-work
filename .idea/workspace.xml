@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3db7bd3-b339-4440-87b5-dc81fce2a832" name="Changes" comment="add eslinter">
-      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chosenUser.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/error.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/login.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/register.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/users.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/fs.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d3db7bd3-b339-4440-87b5-dc81fce2a832" name="Changes" comment="add hbs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705526253038</updated>
       <workItem from="1705526256621" duration="825000" />
-      <workItem from="1705604256289" duration="2217000" />
+      <workItem from="1705604256289" duration="2837000" />
     </task>
     <task id="LOCAL-00001" summary="add eslinter">
       <option name="closed" value="true" />
@@ -79,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705527067079</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add hbs">
+      <option name="closed" value="true" />
+      <created>1705608265687</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705608265687</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add eslinter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add eslinter" />
+    <MESSAGE value="add hbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hbs" />
   </component>
 </project>
