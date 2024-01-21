@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3db7bd3-b339-4440-87b5-dc81fce2a832" name="Changes" comment="add users controllers,middleware,service,repository">
-      <change afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middlewares/common.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/user.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/errors.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/login.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/register.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
+    <list default="true" id="d3db7bd3-b339-4440-87b5-dc81fce2a832" name="Changes" comment="add middleware">
+      <change afterPath="$PROJECT_DIR$/src/errors/api.error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/fs.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/user.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/common.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/common.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/errors.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/errors.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,7 @@
       <updated>1705526253038</updated>
       <workItem from="1705526256621" duration="825000" />
       <workItem from="1705604256289" duration="2837000" />
-      <workItem from="1705824216513" duration="10423000" />
+      <workItem from="1705824216513" duration="17931000" />
     </task>
     <task id="LOCAL-00001" summary="add eslinter">
       <option name="closed" value="true" />
@@ -99,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705824390086</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add users controllers,middleware,service,repository">
+      <option name="closed" value="true" />
+      <created>1705843035579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705843035579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +114,7 @@
     <MESSAGE value="add eslinter" />
     <MESSAGE value="add hbs" />
     <MESSAGE value="add users controllers,middleware,service,repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="add users controllers,middleware,service,repository" />
+    <MESSAGE value="add middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="add middleware" />
   </component>
 </project>

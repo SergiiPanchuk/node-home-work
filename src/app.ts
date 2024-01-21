@@ -19,6 +19,8 @@ app.use("/login", loginRouter);
 app.use("/register", registerRouter);
 app.use("/error", errorRouter);
 
+app.use("*", errorRouter);
+
 app.use(express.static(path.join(process.cwd(), "static")));
 app.set("view engine", ".hbs");
 app.engine(".hbs", engine({ defaultLayout: false }));

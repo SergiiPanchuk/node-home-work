@@ -1,3 +1,4 @@
+import { ApiError } from "../errors/api.error";
 import { IUser } from "../interfaces/user.interface";
 import { userRepository } from "../repositories/user.repository";
 
@@ -10,7 +11,7 @@ class UserService {
     const users = await userRepository.getAll();
     const index = users.findIndex((user) => user.id === id);
     if (index === -1) {
-      throw new Error("user not found");
+      throw new ApiError("user not found", 404);
     }
     return users[index];
   }

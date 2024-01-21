@@ -5,12 +5,15 @@ class CommonMiddleware {
     try {
       const id = Number(req.params.id);
 
+      console.log(!Number.isInteger(id));
       if (!Number.isInteger(id)) {
         throw new Error("wrong ID param");
       }
 
       next();
-    } catch (e) {}
+    } catch (e) {
+      next(e);
+    }
   }
 }
 

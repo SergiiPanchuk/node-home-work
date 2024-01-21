@@ -1,11 +1,16 @@
 import { Router } from "express";
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
+
+import { ApiError } from "../errors/api.error";
 
 const router = Router();
 
-router.get("/", async (req: Request, res: Response) => {
-  const errorState = req.query.message as string;
-  res.render("error", { errorState });
-});
+router.get(
+  "/",
+  (err: ApiError, req: Request, res: Response, next: NextFunction) => {
+    const errorState = err.message;
+    res.render("error", { errorState });
+  },
+);
 
 export const errorRouter = router;
