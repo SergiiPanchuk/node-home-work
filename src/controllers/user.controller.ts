@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 
+import { IUser } from "../interfaces/user.interface";
 import { userService } from "../services/user.service";
 
 class UserController {
@@ -14,9 +15,34 @@ class UserController {
 
   public async getById(req: Request, res: Response, next: NextFunction) {
     try {
-      const id = Number(req.params.id);
-      const users = await userService.getById(id);
-      res.render("chosenUser", { user: users });
+      const id = req.params.id;
+      const user = await userService.getById(id);
+      res.render("chosenUser", { user });
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  public async deleteById(req: Request, res: Response, next: NextFunction) {
+    try {
+      const id = req.params.id;
+
+      await userService.deleteById(id);
+
+      res.sendStatus(204);
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  public async updateById(req: Request, res: Response, next: NextFunction) {
+    try {
+      const id = req.params.id;
+      const body = req.body as Partial<IUser>;
+
+      const user = await userService.updateById(id, body);
+
+      res.status(201).json(user);
     } catch (e) {
       next(e);
     }

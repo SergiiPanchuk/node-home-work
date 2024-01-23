@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3db7bd3-b339-4440-87b5-dc81fce2a832" name="Changes" comment="add middleware">
-      <change afterPath="$PROJECT_DIR$/src/errors/api.error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/auth.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/user.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/common.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/common.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/errors.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/errors.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/user.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/user.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/login.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/login.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/register.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/register.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/users.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/static/users.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lesson4__structure",
-    "last_opened_file_path": "C:/Users/Сергій/IdeaProjects/node-home-work/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "ts.external.directory.path": "C:\\Users\\Сергій\\IdeaProjects\\node-home-work\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson4__structure&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Сергій/IdeaProjects/node-home-work/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Сергій\\IdeaProjects\\node-home-work\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Сергій\IdeaProjects\node-home-work\static" />
@@ -70,7 +83,9 @@
       <updated>1705526253038</updated>
       <workItem from="1705526256621" duration="825000" />
       <workItem from="1705604256289" duration="2837000" />
-      <workItem from="1705824216513" duration="17931000" />
+      <workItem from="1705824216513" duration="18387000" />
+      <workItem from="1705950029478" duration="8704000" />
+      <workItem from="1706036315643" duration="9158000" />
     </task>
     <task id="LOCAL-00001" summary="add eslinter">
       <option name="closed" value="true" />
@@ -104,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705843035579</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add middleware">
+      <option name="closed" value="true" />
+      <created>1705869609985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705869609985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

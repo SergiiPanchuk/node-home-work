@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 
 import { read, write } from "../fs.service";
 import { IUser } from "../interfaces/user.interface";
+import { User } from "../models/user.model";
 
 const router = Router();
 
@@ -24,13 +25,12 @@ router.post("/", async (req: Request, res: Response) => {
     }
     const users = await read();
 
-    const newUser: IUser = {
-      id: users[users.length - 1].id + 1,
+    const newUser: IUser = await User.create({
       userName,
       email,
       password,
       age,
-    };
+    });
     users.push(newUser);
     await write(users);
 
